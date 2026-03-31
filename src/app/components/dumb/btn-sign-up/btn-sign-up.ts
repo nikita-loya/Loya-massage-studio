@@ -14,7 +14,7 @@ declare global {
 })
 export class BtnSignUpDumb {
   openLink() {
-    window.ym?.(99897562, 'reachGoal', 'signup_click');
+    window.ym?.(108328301, 'reachGoal', 'signup_click');
     window.open('https://dikidi.net/601523?p=0.pi', '_blank', 'noopener,noreferrer');
   }
 }

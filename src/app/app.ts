@@ -43,7 +43,7 @@ export class App {
 
   private trackMetrikaHit(url: string): void {
     if (!isPlatformBrowser(this.platformId)) return;
-    const counterId = 99897562;
+    const counterId = 108328301;
     window.ym?.(counterId, 'hit', url);
   }
 
