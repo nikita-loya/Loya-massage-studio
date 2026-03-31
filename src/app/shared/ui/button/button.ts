@@ -25,6 +25,7 @@ export class Button {
 
     openLink() {
       if (!this.disabled && this.href) {
+        window.ym?.(108328301, 'reachGoal', 'signup_click');
         window.open(this.href, this.target || '_blank', 'noopener,noreferrer');
       }
     }
