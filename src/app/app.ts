@@ -5,6 +5,12 @@ import { BtnSignUpDumb } from "@components/dumb/btn-sign-up/btn-sign-up";
 import { FooterSmart } from '@components/dumb/footer/footer';
 import { HeaderSmart } from '@components/smart/header/header';
 
+declare global {
+  interface Window {
+    ym?: (...args: any[]) => void;
+  }
+}
+
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, HeaderSmart, FooterSmart, BtnSignUpDumb],
@@ -19,6 +25,7 @@ export class App {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         this.scrollToTop();
+        this.trackMetrikaHit(event.urlAfterRedirects || event.url);
       }
     });
   }
@@ -34,5 +41,10 @@ export class App {
     }
   }
 
+  private trackMetrikaHit(url: string): void {
+    if (!isPlatformBrowser(this.platformId)) return;
+    const counterId = 99897562;
+    window.ym?.(counterId, 'hit', url);
+  }
 
 }
