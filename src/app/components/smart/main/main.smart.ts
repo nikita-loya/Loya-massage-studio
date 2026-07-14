@@ -27,7 +27,7 @@ import { CarouselItem } from '@shared/interfaces/slider-item';
 export class MainSmart {
   carouselPromotionContent = signal<CarouselItem[]>([
     {
-      photo: 'assets/images/promotions/1.webp',
+      photo: 'assets/images/promotions/3.PNG',
       alt: 'акции на первое посещение',
     },
   ]);
@@ -49,9 +49,9 @@ export class MainSmart {
       alt: 'Иван',
     },
     {
-      name: 'Елизавета',
+      name: 'Людмила',
       role: 'МАСТЕР',
-      photo: '/assets/images/team/elizaveta.webp',
+      photo: '/assets/images/team/ludmila.JPG',
       alt: 'Дмитрий',
     },
     {
@@ -95,9 +95,9 @@ export class MainSmart {
       alt: 'Парный массаж',
     },
     {
-      title: 'Медитативный массаж',
-      image: '/assets/images/massage/meditation.jpg',
-      alt: 'Медитативный массаж',
+      title: 'Авторский',
+      image: '/assets/images/massage/authors.JPEG',
+      alt: 'Авторский',
     },
   ]);
 }

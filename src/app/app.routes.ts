@@ -101,11 +101,11 @@ export const routes: Routes = [
     title: 'Акции',
     data: {
       meta: {
-        title: 'Акции и скидки | Loya Massage Studio',
+        title: 'Акции и скидки | Loya Massage Studio 1111',
         description:
           'Специальные предложения на массаж: скидки для новых клиентов, выгодные абонементы, сезонные акции.',
         keywords: 'акции массажного салона, скидки на массаж, спецпредложения',
-        image: '/assets/images/promotions/1.webp',
+        image: '/assets/images/promotions/3.png',
       },
     },
   },
