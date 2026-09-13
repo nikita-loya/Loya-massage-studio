@@ -48,12 +48,12 @@ export class MainSmart {
       photo: '/assets/images/team/ivan.webp',
       alt: 'Иван',
     },
-    {
-      name: 'Людмила',
-      role: 'МАСТЕР',
-      photo: '/assets/images/team/ludmila.JPG',
-      alt: 'Дмитрий',
-    },
+    // {
+    //   name: 'Людмила',
+    //   role: 'МАСТЕР',
+    //   photo: '/assets/images/team/ludmila.JPG',
+    //   alt: 'Дмитрий',
+    // },
     {
       name: 'АНДРЕЙ',
       role: 'МАСТЕР',
